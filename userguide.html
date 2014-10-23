@@ -1,0 +1,237 @@
+<p> </p>
+
+<h3>Zone 1</h3>
+
+<p><cite>Zone 1</cite>  
+mostly contains the website navigation bar. The public <i class="foundicon-unlock foundicon"></i> /private <i class="foundicon-lock foundicon"></i> status of the project is indicated next to the project's name. By default, projects are created with a private status meaning that only the project’s members can access the data, after being identified by CompPhy. This policy guarantees data privacy while still allowing data sharing. In contrast, a public project can be accessed by any guest to which the URL would have been sent. Without opening an account on CompPhy and being project's member, they can see the project’s trees and examine them on the workbenches, but they are not allowed to perform changes to the trees or data of the project.</p>
+
+<h3>Zone 2</h3>
+
+<p><cite>Zone 2</cite> contains the project's menu that presents tabs specific to the project: trees (the main project page), forum, documents and settings. Then it displays two boxes, one under the other. Each one provides users with a brief overview of a tree collection (currently CompPhy handles two collections). Every tree has its name on top and can be moved to a different place within the collection by dragging it from this name. A transparent blue blox on the left, resp. right, side of a tree indicates that this tree is currently displayed on the left, resp. right workbench (<cite>Zone 3</cite>).<br/>
+Finally, on the right-hand side, a collaborative box lists the connected members and displays the information related to the interaction of a project's members. The member with the crown is the administrator of the project. The member with the hand icon is the one currently in control, meaning the one that can modify the project view shared by connected users (e.g., which trees are displayed on the workbenches) or edit trees (e.g. coloring their leaves). A member can request the control at any time by clicking on the link above the collaborative box. By default, the project display (<cite>Zones 2</cite> and <cite>3</cite>) is synchronized with other project members, but it is possible to disable this feature by unchecking "Synchronize view with partners": any user with a synchronized view sees in real time the edits performed by the person in control; a member that has disabled the synchronization feature can visualize trees separately from the others (e.g., decide wich trees are to be displayed on the workbenches), but he cannot perform modifications on the trees (e.g. color tips) and more generally on the project.</p>
+
+<h3>Zone 3</h3>
+
+<p><cite>Zone 3</cite> displays two workbenches, showing in full size two trees side by side to ease their comparison. Any tree from Zone 2 can be put on the left/right workbench by dragging there its sketched picture (or by clicking on it with the left/right mouse button). Tools available in this zone either apply to each of these trees separately or make use of both trees together. Some links are available to download the data of a specific tree (the picture or the whole data of this tree).</p>
+
+<p>Tools applying to a tree displayed on a workbench:</p>
+
+<div class="row">
+	<div class="small-2 columns">
+		<i class="icon-arrow-left"></i><i class="icon-arrow-right"></i>
+	</div>
+	<div class="small-10 columns">
+		<p><strong>Left/Right arrows</strong><br>
+		Clicking on these arrows allows users to quickly navigate among trees of a same collection.</p>
+	</div>
+	<hr>
+	<div class="small-2 columns">
+		<img alt="Horizontal symmetry" src="http://www.atgc-montpellier.fr/compphy/img/tourner.png" width="25" />
+	</div>
+	<div class="small-10 columns">
+		<p><strong>Horizontal symmetry</strong><br>
+		Horizontally flips the displayed tree.</p>
+	</div>
+	<hr>
+	<div class="small-2 columns">
+		<img alt="Manual swap" src="http://www.atgc-montpellier.fr/compphy/img/swapdual.png"  width="25"/>
+	</div>
+	<div class="small-10 columns">
+		<p><strong>Swap</strong><br>
+		Swaps branches corresponding to taxa selected in the displayed tree. By clicking on two taxa names, the corresponding subtrees of their most recent common ancestor will be swapped.</p>
+	</div>
+	<hr>
+	<div class="small-2 columns">
+		<i class="icon-zoom-in"></i><i class="icon-zoom-out"></i>
+    </div>
+	<div class="small-10 columns">
+		<p><strong>Zoom in ant out</strong><br>
+		Temporarily changes the size of the dispayed tree.</p>
+	</div>
+	<hr>
+	<div class="small-2 columns">
+		<div class="toolbarsection arrows">
+            <i class="icon-chevron-down downc controls"></i>
+            <i class="icon-chevron-up upc controls"></i>
+            <i class="icon-chevron-right rightc controls"></i>
+            <i class="icon-chevron-left leftc controls"></i>
+        </div>
+	</div>
+	<div class="small-10 columns">
+		<p><strong>Directional pad</strong><br>
+		Moves the tree inside the graphical view.</p>
+	</div>
+	<hr>
+	<div class="small-2 columns">
+		<i class="icon-bullseye"></i>
+	</div>
+	<div class="small-10 columns">
+		<p><strong>Focus</strong><br>
+		Adapts the graphical view to the current height of the tree.</p>
+	</div>
+	<hr>
+	<div class="small-2 columns">
+		<i class="icon-camera"></i>
+	</div>
+	<div class="small-10 columns">
+		<p><strong>Save picture</strong><br>
+		Saves the current tree display for its future displays on the workbenches.</p>
+	</div>
+</div>
+<br>
+<p>Tools comparing the two trees displayed on the workbenches:</p>
+
+<div class="row">
+	<div class="small-2 columns">
+		<img alt="RF distance" src="http://www.atgc-montpellier.fr/compphy/img/borne.png" width="32" />
+	</div>
+	<div class="small-10 columns">
+		<p><strong>Distance tool</strong><br>
+		Computes the distance between the two displayed trees : the trees are restricted to their common taxa before computing their distance with the <a href="http://evolution.genetics.washington.edu/phylip/doc/treedist.html" target="blank">Treedist</a> tool ("symmetric difference" option). The result is the number of branches present in one tree but not in the other (here, a branch is characterized by the list of taxa in the corresponding subtree).<br />
+		<cite>Felsenstein, J. 1993. PHYLIP (Phylogeny Inference Package) version 3.5c. Distributed by the author. Department of Genetics, University of Washington, Seattle.</cite></p>
+	</div>
+	<hr>
+	<div class="small-2 columns">
+		<img alt="MAST" src="http://www.atgc-montpellier.fr/compphy/img/yinyang.png" width="32" />
+	</div>
+	<div class="small-10 columns">
+		<p><strong>MAST consensus tool</strong><br>
+		Computes a Maximum Agreement SubTree (MAST) of the two trees displayed on the workbenches. A MAST is a subtree common to both input trees that contains a largest subset of taxa. Two new trees will be created in the collection of the trees selected for the MAST. The new trees will be the same as the original ones but blurring the non-common topology (the branches are dashed and the leaves are grayed) to highlight the MAST structure.</p>
+	</div>
+	<hr>
+	<div class="small-2 columns">
+		<img alt="Swap" src="http://www.atgc-montpellier.fr/compphy/img/swapauto.png" width="32" />
+	</div>
+	<div class="small-10 columns">
+		<p><strong>Auto swap tool</strong><br>
+		Automatically swaps the branches of the right tree according to the left tree, which helps detecting their topological (dis)agreements by imposing a similar taxa order.</p>
+	</div>
+</div>
+
+<h3>Zone 4</h3>
+
+<p><cite>Zone 4</cite> mainly proposes tools that can be applied on a subset of chosen trees:</p>
+
+
+<div class="row">
+	<div class="small-10 columns small-offset-2">
+		<p><strong>Manual tunning of the picture</strong><br>
+		Allows you to modify the graphical rendering of the tree shown directly above (Zone 3).  Basically, a <em>Tree</em> is a newick string. This tree is transformed in a picture thanks to a <em>Script</em> written in the ScripTree's language. Users with a basic knowledge of this language can modify the script. Instructions in this script are related to the rendering and annotation of the tree. The <em>Annotations</em> correspond to additional information that can be dispayed on the picture, associated to taxa, subtrees or the whole tree (see examples on<a href="http://www.scriptree.org"> ScripTree's website</a>).<br />
+		<em>Chevenet F. et al. 2010. ScripTree: scripting phylogenetic graphics. Bioinformatics 2010 26(8):1125-1126.</em></p>
+	</div>
+	<hr>
+	<div class="small-2 columns">
+		<img alt="Timeline" src="http://www.atgc-montpellier.fr/compphy/img/horloge.png" width="48" />
+	</div>
+	<div class="small-10 columns">
+		<p><strong>Timeline & TO DO list</strong><br>
+		The Timeline of a project is the list of performed steps you decide to emphasize. Everytime you add a historical point in the timeline, you can also save the tree collections in their current state, as a backup. When restoring a previous bakcup, the current tree collections are replaced by those existing at the time the backup was performed (<em>e.g.</em>, recent modifications in the trees as well as new trees will be lost).<br />
+		The TO DO list allows you to plan future steps of the project. TO DO items can be re-ordered and a TO DO item can be transferred in the timeline.</p>
+	</div>
+	<hr>
+	<div class="small-2 columns">
+		<img alt="Restrict trees" src="http://www.atgc-montpellier.fr/compphy/img/filtre.png" width="48" />
+	</div>
+	<div class="small-10 columns">
+		<p><strong>Restrict trees</strong><br>
+		Restricts several trees to the taxa they have in common. The user can select two or more trees but the whole set still must have a non-empty common leaf set and each selected source tree has to possess at least two such leaves. The restriction of each selected tree will appear as an additional tree at the end of the same collection.</p>
+	</div>
+	<hr>
+	<div class="small-2 columns">
+		<img alt="Reroot trees" src="http://www.atgc-montpellier.fr/compphy/img/tree.png" width="48" />
+	</div>
+	<div class="small-10 columns">
+		<p><strong>Reroot trees</strong><br>
+		Allows you to reroot specified trees. You have to select the trees you want to reroot, then write a list of desired outgroups. For instance, if you want to reroot the tree by putting the group composed of Mus and Rattus at the root, write: "Mus,Rattus". Beware that taxa names you specify as outgroup must strictly match those indicated in the trees you want to reroot, that is they must be composed of the same ordered list of characters (letters, numbers, ...). Moreover, avoid space characters in the outgroup taxa list.<br />
+		When several outgroup taxa are indicated, the tree is rerooted if it contains at least one of these taxa and if all the outgroup taxa it contains are in a same group, that moreover does not include any other taxa (as any such taxa is considered to be an ingroup taxa).<br />
+		When rerooting a tree, the rerooted tree can either replace the original tree in its collection, or be added as a new tree at the end of this collection.</p>
+	</div>
+	<hr>
+	<div class="small-2 columns">
+		<img alt="Color trees" src="http://www.atgc-montpellier.fr/compphy/img/treeleaves.png" width="48" />
+	</div>
+	<div class="small-10 columns">
+		<p><strong>Color trees</strong><br>
+		Proposes you to color taxa names or whole subtrees. First pick a color, then select a set of taxa to which the color is assigned. Once you have assigned all desired colors, tick the trees to which the colors have to be applied. Taxa names in these trees will be colored, as well as branches of subtrees containing taxa sharing a same color. Moreover, any such subtree can be replaced by a colored patch when selecting the "Color subtree background" option.<br />
+		You can copy leaf colors of an already colored tree to transfer them to other trees. To this purpose, put the tree containing colors to be copied on the left or right workbench, then in the color tool choose "Get left (right) tree colors" and tick the trees to be colored in this way (of course you can also add other colors before proceeding).<br /></p>
+<p><font size="-2">(The icon is a reduction of Alexander Calder's <i>Tree</i> painting, 1970).</font></p>
+	</div>
+	<hr>
+	<div class="small-2 columns">
+		<img alt="Compute an additional supertree" src="http://www.atgc-montpellier.fr/compphy/img/superman.png" width="48" />
+	</div>
+	<div class="small-10 columns">
+		<p><strong>Compute a supertree</strong><br>
+		Computes a supertree from a set of source trees by one of two methods: MRP (Baum & Ragan 2004) and PhySIC_IST (Scornavacca et al 2008). The former is an optimization method, while the latter is a consensus method. MRP outputs a supertree containing all taxa of the source trees and composed of subtrees supported by more source tree branches than other candidate subtrees. By default, PhySIC_IST outputs a <em>consensus</em> supertree,<em> i.e.</em> a tree whose subtrees are supported by a vast majority of the source trees*. PhySIC_IST can exclude "rogue" taxa from the supertree, that is taxa having a notably different position in different source trees. Moreover, its <em>consensus</em> behavior can be toggled from strict consensus to a kind of majority-rule consensus by decreasing a parameter value (STC) from 1 to 0 (see <a href="http://www.atgc-montpellier.fr/physic_ist/">PhySIC_IST</a> website for more details). Additionnally, PhySIC_IST can produce a new version of each source tree changing due to a significantly conflicting signal present in the other source trees. There is a box that you can check before asking PhySIC_IST to run, so that the tree collection contains these new versions of modified source trees (they appear as new trees in the collection with a red pastille on the top right, with collapsed branches in red and removed taxa in grey, while green pastilles on existing source trees distinguishes those in which no modification was necessary). By default, modifications of the source tree collection are off. </p>
+
+		<p>To compute a supertree with a given method, select a set of trees in the left (PhySIC_IST) or right (MRP) part of the panel. Several parameters can be set before computing the supertree:</p>
+
+		<ul>
+			<li>MRP: to combine all trees that most parsimoniously represent the source trees, the official MRP method recommends to resort to a strict consensus tree. Here, a majority-rule and a greedy consensus are also available.</li>
+			<li>PhySIC_IST: the branches of the source trees with a support lower than a specified threshold can be ignored (<em>Support threshold for source clade selection</em>), and the behavior of the method can be tuned from veto to vote (<em>Correction threshold used by STC</em> - see description above). See the <a href="http://www.atgc-montpellier.fr/physic_ist/">PhySIC_IST</a> website for more information on the method and its parameters.</li>
+		</ul>
+
+		<p>The computed supertree will appear at the end of the Tree collection 2. Note that the MRP method produces an unrooted supertree, that is arbitrarily rooted by Compphy, at the trifurcation indicated in its newick form.</p>
+
+		<p>Be aware that computing a supertree can be very long (from a minute to several hours, depending on the number of taxa in the source trees) and that CompPhy will be unavailable while running the supertree computation job. So if you want to compute a supertree from a large data set, we recommend you to go to the <a href="http://www.atgc-montpellier.fr/physic_ist/">PhySIC_IST</a> website, then upload on CompPhy the supertree once it has been computed.</p>
+
+		<p>* Note that in both methods, only source trees containing relevant taxa can vote for a given subtree (that is source trees containing at least several taxa of the given subtree). Note that MRP returns trees without branch lengths and PhySIC_IST only provides branch lengths to improve the display of the tree (these lengths do not reprensent evolutionary distances).</p>
+
+		<p><em>Baum BR, Ragan MA. The MRP method. In: Bininda-Emonds ORP, editor. Phylogenetic supertrees: Combining Information to Reveal the Tree of Life . Dordrecht: Kluwer Academic; 2004. pp. 17–34.</em></p>
+
+		<p><em>Scornavacca C., Berry V., Lefort V., Douzery E.J.P., Ranwez V. BMC Bioinformatics. 2008, Oct 4;9:413.</em></p>
+	</div>
+	<hr>
+	<div class="small-2 columns">
+		<img alt="Trees' display options" src="http://www.atgc-montpellier.fr/compphy/img/ecran.png" width="48" />
+	</div>
+	<div class="small-10 columns">
+		<p><strong>Display options</strong><br>
+		Allows you to modify the way trees are displayed : support values or branch lengths can be reported; you can change the the font size of taxa names as well as the interleaf space between them; you can also add an evolutionary scale above the tree to help interpret branch lengths.</p>
+	</div>
+	<hr>
+	<div class="small-2 columns">
+		<img alt="Change tree names" src="http://www.atgc-montpellier.fr/compphy/img/editer.png" width="48" />
+	</div>
+	<div class="small-10 columns">
+		<p><strong>Change tree name</strong><br>
+		Allows you to modify the name of the trees appearing in each collection. You can assign the same name to different trees if need be.  Each tree can be renamed manually but alternatively you can upload a file containing the names of the all trees (e.g., when trees are named in automated way by an inference program). The format of this file is the following:</p>
+
+		<p style="margin-left:80px"><tt>tree1,tree2, ... ,treeN</tt><br />
+		<tt>treeA,treeB, ....... ,treeX</tt></p>
+
+		<p>Tree names on the first (resp. second) line are assigned to trees of collection 1 (resp. 2) in the order they appear in Zone 2. Moreover, when setting tree names from a file you don't need to provide a name for each tree.<br />
+		For example</p>
+
+		<p style="margin-left:80px"><tt>tree1,tree2,,tree4,,,tree7</tt></p>
+
+		<p>only renames trees 1, 2, 4 and 7 in collection 1, but none in collection 2.<br />
+		Note that a tree name can be composed of at most 12 characters.</p>
+	</div>
+	<hr>
+	<div class="small-2 columns">
+		<img alt="Change taxa names" src="http://www.atgc-montpellier.fr/compphy/img/arbre.png" width="48" />
+	</div>
+	<div class="small-10 columns">
+		<p><strong>Change taxa names</strong><br>
+		Allows you to change the name of one or several taxa in all or chosen trees. Unlike tree names, taxa names can be quite long. Note that several tools of Compphy use taxa names to compare trees (e.g., computing the MAST of two trees or their Robinson and Foulds distance,  computing a supertree from source trees, ...). In such cases, taxa in different trees are identified only if they have the same name (<em>e.g.</em>, <em>Mus</em>, <em>Mus_musculus and </em> <em>Mus_Musculus_M9B286</em> will be considered as different taxa).</p>
+	</div>
+	<hr>
+	<div class="small-2 columns">
+		<img alt="Upload trees" src="http://www.atgc-montpellier.fr/compphy/img/telecharger.png" width="48" />
+	</div>
+	<div class="small-10 columns">
+		<p><strong>Upload trees</strong><br>
+		Allows you to import trees in collection 1 or 2. Imported trees must be in <a href="http://evolution.genetics.washington.edu/phylip/newicktree.html">Newick format</a> and can be contained in a file for upload or manually entered in a text field (accepting cut and paste). </p>
+	</div>
+	<hr>
+	<div class="small-2 columns">
+		<img alt="Delete trees" src="http://www.atgc-montpellier.fr/compphy/img/delete_big.png" width="48" />
+	</div>
+	<div class="small-10 columns">
+		<p><strong>Remove trees</strong><br>
+		Allows you to delete selected trees in the project. Beware that trees are removed permanently. They can only be recovered if you have performed a backup including these trees (see backup option in the Timeline tool).</p>
+	</div>
+</div>
+
+<p> </p>

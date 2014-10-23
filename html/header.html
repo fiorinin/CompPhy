@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!--[if IE 8]> 				 <html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>CompPhy</title>
+
+        <!-- jQuery -->
+        <script src='js/jquery_1.8.min.js'></script>
+        
+        <!-- jQuery UI -->
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+        <link type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/themes/start/jquery-ui.css" rel="stylesheet" />
+        
+        <!-- Foundation & styles -->
+        <link rel="stylesheet" href="css/foundation.css" />
+        <script src="js/vendor/custom.modernizr.js"></script>
+        <link rel="stylesheet" href="css/newCompPhy.css" />
+        <link href='http://fonts.googleapis.com/css?family=Maven+Pro' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/foundation_icons_general_enclosed/stylesheets/general_enclosed_foundicons.css" />
+        <link rel="stylesheet" href="css/foundation_icons_general_enclosed/stylesheets/general_enclosed_foundicons_ie7.css" />
+        
+        <!-- jQuery SVG -->
+        <link type="text/css" href="css/jquery.svg.css" rel="stylesheet" />
+        <script type="text/javascript" src="js/jquery.svg.min.js"></script>
+        <script type="text/javascript" src="js/jquery.svganim.min.js"></script>
+        <script type="text/javascript" src="js/jquery.svgdom.min.js"></script>
+        
+        <!-- Custom SVG script -->
+        <script type="text/javascript" src="js/jquery.svg.js"></script>
+        
+        <!-- Shift clic plugin -->
+        <script type="text/javascript" src="js/jquery.shiftSelectable.js"></script>
+        
+        <!-- Shadow modal -->
+        <script type="text/javascript" src="js/jquery.shadowbox.js"></script>
+        <link type="text/css" href="css/shadowbox.css" rel="stylesheet" />
+        <script type="text/javascript">Shadowbox.init({ overlayOpacity:0.8 });</script>
+
+        <!-- CompPhy -->
+        <script type="text/javascript" src="js/jquery.compphy.js"></script>
+        
+        <!-- Magic CSS -->
+        <link rel="stylesheet" href="css/magic.min.css" />
+        
+        <!-- jQuery Form -->
+        <script type="text/javascript" src="js/jquery.form.js"></script>
+        
+        <!-- CKeditor -->
+        <script src="ckeditor/ckeditor.js"></script>
+        
+        <!-- Font awesome icons -->
+        <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+
+        <?php
+        // jQuery & jQuery UI
+        /*echo '<script type="text/javascript" src="' . HERE . 'js/jquery.js"></script>';
+        echo '<script type="text/javascript" src="' . HERE . 'js/jquery-ui.min.js"></script>';
+        echo '<script type="text/javascript" src="' . HERE . 'js/jquery-ui.touch.js"></script>';
+        echo '<link type="text/css" href="' . HERE . 'css/start/jquery-ui.css" rel="stylesheet" />';
+        // Tipsy plugin
+        echo '<script type="text/javascript" src="' . HERE . 'js/jquery.tipsy.js"></script>';
+        echo '<link type="text/css" href="' . HERE . 'css/tipsy.css" rel="stylesheet" />';
+        // idTabs plugin
+        echo '<script type="text/javascript" src="' . HERE . 'js/jquery.idtabs.js"></script>';
+        // Shift clic plugin
+        echo '<script type="text/javascript" src="' . HERE . 'js/jquery.shiftcheckbox.js"></script>';
+        // Shadowbox plugin
+        echo '<script type="text/javascript" src="' . HERE . 'js/jquery.shadowbox.js"></script>';
+        if(isset($_GET['p']) && $_GET['p'] == 'project') {
+        // jQuery-SVG plugin
+        echo '<link type="text/css" href="' . HERE . 'css/jquery.svg.css" rel="stylesheet" />';
+        echo '<script type="text/javascript" src="' . HERE . 'js/jquery.svg.min.js"></script>';
+        echo '<script type="text/javascript" src="' . HERE . 'js/jquery.svganim.min.js"></script>';
+        echo '<script type="text/javascript" src="' . HERE . 'js/jquery.svgdom.min.js"></script>';
+        // SVG custom plugin
+        echo '<script type="text/javascript" src="' . HERE . 'js/jquery.svg.js"></script>';
+        }
+        // Shadowbox
+        echo '<link type="text/css" href="' . HERE . 'css/shadowbox.css" rel="stylesheet" />';
+        echo '<script type="text/javascript">Shadowbox.init({ overlayOpacity:0.8 });</script>';
+        // CompPhy plugin
+        echo '<script type="text/javascript" src="' . HERE . 'js/jquery.compphy.js"></script>';
+        // Ajax form plugin
+        echo '<script type="text/javascript" src="' . HERE . 'js/jquery.form.js"></script>';
+        // CKeditor
+        echo '<script type="text/javascript" src="' . HERE . 'ckeditor/ckeditor.js"></script>';
+        echo '<script type="text/javascript" src="' . HERE . 'ckeditor/adapters/jquery.js"></script>';
+        // css3buttons
+        //echo '<link type="text/css" href="' . HERE . 'css/css3buttons.css" rel="stylesheet" />';
+        */
+        ?>
+        <!--<script type="text/javascript" src="<?php echo JAVASCRIPT;?>"></script>-->
+        <?php
+        if (file_exists (HEREPATH . 'js/functions.js')) {
+            echo '<script type="text/javascript" src="' . HERE . 'js/functions.js"></script>';
+        }
+        ?>
+    </head>

@@ -1,0 +1,130 @@
+<faq>
+  <qa id="1">
+    <q>What is CompPhy?</q>
+    <an>
+      <![CDATA[
+      <p>CompPhy is a collaborative web-based platform that allows distant people to work together on a phylogeny collection, mainly to analyze it, in a synchronous or asynchronous way. Various tools are available to help you perform a comparative analysis, e.g. allowing you to change the way trees are displayed or to compute tree-to-tree distances or supertrees.</p>
+      <p>Though, CompPhy is designed as a collaborative tool, you can also use it alone, on your personal phylogeny collection.</p>
+      <p>Last, CompPhy is a way to store phylogenies in the internet "cloud", while controlling who accesses them. As a classical cloud repository, your trees will be accessible from any computer/internet device you happen to find (after a logging step). In this way, you can carry on the analysis of your trees indifferently from the place you are in.</p>
+      ]]>
+    </an>
+  </qa>
+
+  <qa id="2">
+    <q>Why use CompPhy?</q>
+    <an>
+      <![CDATA[
+      <p>The internet has changed the way scientists work together, allowing distant collaborations to be performed while collaborators are hardly ever in a same room. Though, there are still kinds of data for which you wonder how you could discuss or analyze them with distant collaborators. In particular, when considering phylogenies, we often need to point at particular trees in a collection, or at precise taxa or subtrees in one of the trees, we need to mark (e.g. to color) tree parts having a specific feature, or do some tree comparison computation as the discussion goes on. </p>
+    <p>CompPhy is a tool that allows a group of people to conduct an interactive analysis, while still being in different places.
+Used in a synchronous way, CompPhy allows distant workers to share a screen where phylogenies are displayed and manipulated by all actors in a coordinated way, hence offering them a welcome graphical support to a phone or VOIP call.</p>
+      <p>Used in an asynchronous way, CompPhy is a remanent support of the analyses conducted on a phylogeny collection. In the past, for most phylogenetic projects we conducted with distant collaborators, we lacked a common place where to store phylogenies and other linked information, we missed a place where to leave the phylogenies in the state they were previously (subtree coloring, order of the trees or of the subtrees, etc). Now CompPhy fills this gap (well, for some functionalities - new functionalities will be added in the future).</p>
+      <p>Of course, you don't need to choose between the two above situations, you can alternate at will synchronous and asynchronous sessions over the course of a same project. </p>
+      ]]>
+    </an>
+  </qa>
+
+
+  <qa id="5">
+    <q>Who can access my data?</q>
+    <an>
+      <![CDATA[
+      <p>Passwords are encrypted by CompPhy as soon as it receives them, so only you can modify your account settings. Though, if you loose your password, the system can generate a new password for you.</p>
+      <p>When you create a private project, only you and partners you choose to invite can access the data of the project. In particular, the CompPhy team cannot access this data.</p>
+      <p>When you create a public project, anyone can access it, as long as he knows the precise address of the project. The address of each project simply is its URL. You can advertise this link to people you want to be able to visualize the content of your project. Note that these people will only be able to see the trees of your collections as is, not to alter them nor change other data of the project. To allow people to perform modifications to the project, you must explicitly invite them to join the project, which can be done automatically by going to the <i>Settings</i> page of the project.</p>
+      ]]>
+    </an>
+  </qa>
+
+<qa id="search">
+    <q>How to quickly find a taxon / a tree among all those populating your project?</q>
+    <an>
+      <![CDATA[
+      <p>We did not incorporate a search tool because all browsers have one. ;)
+Try it out: it can locate a specific tree in the collections (even one that is not under the focus of the current display) or a taxon in a tree displayed on a workbench.</p>
+      ]]>
+    </an>
+  </qa>
+
+
+<qa id="project_size">
+    <q>How much trees and of which size can I enter into a project?</q>
+    <an>
+      <![CDATA[
+      <p>Our system limit imposes that you upload no more than 20,000 trees covering at most 5,000 different taxa inside a same project. However, CompPhy's main focus is on collections of several dozen to a few hundred trees. Above this limit, you might not find it too convenient to use. CompPhy can easily handle trees containing more than 1,000 taxa. Above this limit you can still use it, but be aware that pictures will take longer times to load and to be rendered by your browser (they are in SVG format, which requires some computation time from the browser). 
+
+<p>Most users will not go beyond these limits, but in case you need, contact us.</p>
+      ]]>
+    </an>
+  </qa>
+
+
+
+<qa id="Syntax_of_trees">
+    <q>Why doesn't CompPhy accept my trees?</q>
+    <an>
+      <![CDATA[
+     <p></p> 
+    <ul>
+       <li>Input trees have to be in Newick format (Nexus format is not yet handled).</li>
+       <li>If you give support values on clades/branches of your trees, <b>all</b> of them have to have a support, safe for the root where you're not forced to indicate a support.</li>
+       <li>Similarly, if you indicate branch lengths on some clades/branches of your trees, then <b>all</b> of them have to have a length (again safe for the root).</li>
+     </ul>
+      ]]>
+    </an>
+  </qa>
+
+<qa id="Consistency_taxa_names">
+    <q>Why doesn't CompPhy recognize my taxa?</q>
+    <an>
+      <![CDATA[
+     <p>For several functionalities to be useful (MAST/supertree computations as well as common coloring/rooting of trees, etc), CompPhy needs to recognize taxa in different trees that correspond to each other. For CompPhy to consider that two taxa in different trees are the same, they need to have the exact same spelling. That is "mus_musculus_AB125806" and "mus_musculus_MGI98941" are considered as different taxa, as are "mus_musculus_AB125806" and "mus_musculus_AB1".</p>
+<p> The tool called "Change taxa names" (in the toolbar below the workbenches) can help you harmonize your taxa names between trees. If you have more than several dozen taxa names on your hands, then it might be more suited to do that with a specific script outside CompPhy (ask us if needed) and only then import the trees in CompPhy.</p>
+      ]]>
+    </an>
+  </qa>
+
+
+ <qa id="filtering_support_values">
+    <q>How to display only the highest branch supports ?</q>
+    <an>
+      <![CDATA[
+      <p>First you need to ask CompPhy to print support values for this tree, if not already done: go to the <b>Display options</b> tool, tick <i>Change display of support values</i>, tick <i>Display</i> just below, and don't forget to tick the name of the concerned tree in the tree list below before clicking on the <b>Apply</b> button.</p>
+
+     <p>Then you need to modify the commands that generate the tree picture: drag your tree to a workbench, then choose <b>Manual Tuning of the picture</b>, below the picture of your tree. Then go to the <b>Script</b> section and find the command <i>esn -what x: ....</i>, then at the end of this line just add</p>
+    <p><center> <i>-threshold 70</i></center></p> 
+     <p>to ask that only support values equal or greater than 70 be displayed (choose the threshold that suits you).</p>
+
+      ]]>
+    </an>
+  </qa>
+
+ <qa id="citing">
+    <q>How to cite CompPhy?</q>
+    <an>
+      <![CDATA[
+      <p>Please cite "<i>CompPhy: a web-based Collaborative Platform for Comparing Phylogenies</i>", N. Fiorini, V. Lefort, F. Chevenet, V. Berry and
+A.-M. Arigon Chifolleau, submitted.</p>
+      ]]>
+    </an>
+  </qa>
+
+
+  <qa id="3">
+    <q>What if you like CompPhy?</q>
+    <an>
+      <![CDATA[
+      <p>Just <a href="?p=contact">let us know</a>, we'll be happy to ear about that. See also next section to request new functionalities</p>
+      ]]>
+    </an>
+  </qa>
+
+  <qa id="4">
+    <q>How do I request a new functionality? </q>
+    <an>
+      <![CDATA[
+      <p>If you're lacking an important functionality, don't hesitate to ask us. The most demanded ones will be implemented in the next release. Contact the CompPhy team through the "Contact us" link in the top menu.</p>
+      ]]>
+    </an>
+  </qa>
+
+</faq>

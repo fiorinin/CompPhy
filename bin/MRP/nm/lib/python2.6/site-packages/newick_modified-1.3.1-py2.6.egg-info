@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: newick_modified
+Version: 1.3.1
+Summary: A parser for the Newick tree format.
+Home-page: http://www.daimi.au.dk/~mailund/newick.html
+Author: Thomas Mailund
+Author-email: mailund@birc.au.dk
+License: General Public License (GPL)
+Description: A parser for the Newick tree format.
+Platform: UNKNOWN

@@ -1,0 +1,17 @@
+        <ul class="bar">
+            <li></li>
+            <li ><a href="?p=projects" class="primary button"><span class="home icon"></span>My projects</a></li>
+            <li class="sep"><a href="?p=new" class="primary positive button"><span class="plus icon"></span>New project</a></li>
+            <li class="sep"><a href="?p=userguide" class="primary button"><span class="magnifier icon"></span>User Guide</a></li>
+            <li class="sep"><a href="?p=settings" class="primary button"><span class="cog icon"></span>Account settings</a></li>
+            <li class="sep"><a href="?p=contact" class="primary button"><span class="mail icon"></span>Contact us</a></li>
+            <?
+            if(isset($_SESSION['authAdminValue']) && $_SESSION['authAdminValue'] == APASS)
+                echo '<li class="sep"><a href="?p=adminATGC" class="primary button"><span class="key icon"></span>Admin</a></li>';
+            ?>
+            <li class="sep"><a href="?p=disconnect" class="primary button"><span class="cross icon"></span>Log out</a></li>
+        </ul>
+        <?
+        if(isset($_GET['p']) && $_GET['p'] != "project")
+            echo '';
+        ?>
