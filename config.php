@@ -19,7 +19,7 @@
   // Limits
   define ('MAXTREES', 20000); // Number of tree per project
   define ('MAXTAXA', 5000); // Number of taxa per project
-  define ('MAXTREEPOST', 1000); // Number of trees per import
+  define ('MAXTREEPOST', 500); // Number of trees per import per collection
   
   //DB
   define ("DBHOST", "");

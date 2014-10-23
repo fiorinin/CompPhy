@@ -247,7 +247,7 @@ if (('' != $result_dir)
                     }
                     $uploads = TRUE;
                 } else {
-                Navigate::redirectMessage("project", "You cannot add more than ".MAXTREEPOST." trees at once.", 2);
+                Navigate::redirectMessage("project", "You cannot add more than ".MAXTREEPOST." trees at once per collection.", 2);
                 }
             } else {
                 Navigate::redirectMessage("project", "An error happened. Please try again.", 2);
