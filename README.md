@@ -2,6 +2,7 @@ CompPhy
 =======
 
 http://www.atgc-montpellier.fr/compphy
+
 =======
 
 CompPhy is a web-based collaborative platform for comparing phylogenies. It allows distant users to store and share phylogenetic projects. It also enables them interacting through a nice interface by modifying (coloring, rerooting, etc.) the trees of their collections. Modifications are immediatly updated on all connected user browsers.
